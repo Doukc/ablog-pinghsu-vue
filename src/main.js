@@ -13,8 +13,8 @@ import router from './router';
 import './style/style.min.css';
 
 const app = createApp(App)
-app.mount('#app')
 app.use(router)
+app.mount('#app')
 app.config.productionTip = false
 app.config.globalProperties.axios = axios
 

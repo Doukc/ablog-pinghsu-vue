@@ -25,7 +25,7 @@ const routes = [
   { path: '/:catchAll(.*)', component:() => import('../views/404') }
 ]
 
-export const router = createRouter({
+ const router = createRouter({
   history: createWebHashHistory(),
   routes: routes,
   mode:'history',
